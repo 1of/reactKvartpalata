@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'Vidaloka';
+	src: url('../fonts/Vidaloka/Vidaloka-Regular.eot');
+	src: url('../fonts/Vidaloka/Vidaloka-Regular.eot') format('embedded-opentype'),
+	url('../fonts/Vidaloka/Vidaloka-Regular.woff') format('woff'),
+	url('../fonts/Vidaloka/Vidaloka-Regular.ttf') format('truetype'),
+	url('../fonts/Vidaloka/Vidaloka-Regular.svg#Vidaloka-Regular') format('svg');
+}
+
+@font-face {
+	font-family: 'PressStart';
+	src: url('../fonts/pressstart2p/PressStart2P-Regular.eot');
+	src: url('../fonts/pressstart2p/PressStart2P-Regular.eot') format('embedded-opentype'),
+	url('../fonts/pressstart2p/PressStart2P-Regular.woff') format('woff'),
+	url('../fonts/pressstart2p/PressStart2P-Regular.ttf') format('truetype'),
+	url('../fonts/pressstart2p/PressStart2P-Regular.svg#PressStart2P-Regular') format('svg');
+}

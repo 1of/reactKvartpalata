@@ -1,0 +1,386 @@
+@import url('fonts.css');
+
+* {
+	box-sizing: border-box;
+
+}
+
+html {
+	font-size: 10px;
+background-image: url(../img/bg.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+body {
+	margin: 0;
+	color: #1a1a1a;
+	background-color: transparent !important;
+	font-size: 1.6rem;
+	font-family: Vidaloka, sans-serif !important ;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: PressStart, sans-serif !important;
+}
+h1 {
+	text-align: center;
+	text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+}
+p {
+	font-size: 1em;
+}
+.inner-content {
+	max-width: 1460px;
+	margin: 0 auto;
+
+}
+.logo-img {
+	height: 50px;
+	animation: App-logo-spin infinite 5s linear;
+	will-change: transform;
+}
+
+@keyframes App-logo-spin {
+  	25% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: translateY(-2px) translateX(0px) rotate(-100deg);
+	}
+	75% {
+		transform: translateY(2px) translateX(0px) rotate(100deg);
+	}
+}
+/*Navigation line*/
+.nav-link {
+	display: inline-block;
+  position: relative;
+  color: #30ad45 !important;
+	text-transform: uppercase;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+form.sendData div {
+	display: flex;
+	align-items: center;
+
+}
+form.sendData{
+	background-color: rgba(255,255,255, 0.7);
+	border-radius: 10px;
+	padding: 5px;
+	margin: auto;
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+form.sendData label {
+width: 65%;
+}
+form.sendData input {
+border: 2px solid #6ef442;
+width: 10%;
+}
+form.sendData span {
+display: block;
+width: 25%;
+text-align: right;
+}
+form div {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 5px;
+}
+.modal-body {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+}
+.searchList {
+	width: 35%;
+}
+.sendTarifs {
+	background-color: rgba(255,255,255, 0.7);
+	border-radius: 10px;
+	padding: 5px;
+	margin: auto;
+	padding-top: 50px;
+}
+.sendTarifs div {
+	display: flex;
+	width: 100%;
+}
+.sendTarifs label {
+	width: 50%;
+}
+.sendTarifs input {
+		width: 35%;
+		color: black;
+		border: 1px solid green;
+		cursor: pointer;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 2px solid #000000;
+  height: 36px;
+  width: 26px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -5px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5.4px;
+  cursor: pointer;
+  box-shadow: 1px 2px 1px #1aa32f, 0px 0px 1px #0d0d0d;
+  background: #1c4222;
+  border-radius: 4.3px;
+  border: 1px solid #010101;
+}
+.sendTarifs span {
+	width: 15%;
+}
+.ticket {
+	background: white;
+	width: 500px;
+	height: auto;
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+		padding: 15px;
+		margin: auto;
+}
+.ticket img {
+	height: 150px;
+	display: block;
+	float: right;
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.ticketNone {
+	display: none;
+}
+.row {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+select {
+	    background-color: #dbffe0;
+	    border: none;
+			border-radius: 5px;
+	    height: 35px;
+			width: 170px;
+			overflow: hidden;
+			position: absolute;
+			left: 0;
+}
+select option {
+	font-size: 2em;
+}
+button[type=submit] {
+	border: 2px solid #28a745;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 20px 70px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+button[type=submit]:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.9s;
+}
+
+.btn-1e {
+	overflow: hidden;
+}
+
+.btn-1e:after {
+	width: 100%;
+	height: 0;
+	top: 50%;
+	left: 50%;
+	background: #28a745;
+	opacity: 0;
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.btn-1e:hover,
+.btn-1e:active {
+	color: #0e83cd;
+}
+
+.btn-1e:hover:after {
+	height: 570%;
+	opacity: 1;
+}
+
+.btn-1e:active:after {
+	height: 300%;
+	opacity: 1;
+}
+.imgAbout {
+	max-width: 500px;
+	height: auto;
+	border: 2px solid green;
+	border-radius: 5%;
+}
+.footer-social {
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	bottom: 0;
+height: 30px;
+background-color: white;
+width: 100%;
+}
+.footer-social a {
+	font-size: 2em;
+	margin-right: 15px;
+}
+.infouser {
+	margin-left: 5px;
+	height: 25px;
+	margin-bottom: 2px;
+}
+.infouser .fa-info{
+	font-size: 1em;
+}
+.main-h1 {
+	margin-top: 30vh;
+}
+
+.text-underline {
+	display: inline;
+	  text-shadow: 1px 1px #f5f6f9, -1px 1px #f5f6f9, -1px -1px #f5f6f9, 1px -1px #f5f6f9;
+	  background-image: linear-gradient(90deg, currentColor 100%, transparent 100%);
+	  background-position: bottom;
+	  background-repeat: no-repeat;
+	  background-size: 100% 1px;
+}
+.not-found {
+	background: #081421;
+	color: #d3d7de;
+	font-family: "Courier new";
+	font-size: 45px;
+	text-align: center;
+	position: absolute;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	animation: page-Not-Found infinite 10s linear;
+}
+.ticketPrint td {
+	border: 1px solid #ccc;
+  border-spacing: 3px;
+  table-layout: fixed;
+}
+.printBtn {
+	display: block;
+	margin: 50px 0 0 50px;
+	color: #91ffa0 !important;
+}
+.message {
+	text-decoration: underline;
+	text-shadow: 1px 1px #FF0000;
+}
+.time {
+	position: absolute;
+	right: 10px;
+	top: 0;
+	color: gray;
+	font-size: 0.9em;
+}
+
+.col-99 {
+	width: 700px;
+}
+@keyframes page-Not-Found {
+0% {
+color: red;
+}
+50% {
+	color: blue;
+}
+75% {
+	color: black;
+}
+100% {
+	color: green;
+}
+}
+
+
+@media print { /* Стиль для печати */
+    body {
+     font-family: Times, 'Times New Roman', serif;
+		 visibility: hidden;
+    }
+    h1, h2, p {
+     color: red;
+    }
+		table {
+			font-size: 2.4em;
+		}
+		.sendData {
+			display: none;
+		}
+		.printBtn {
+			visibility: hidden;
+		}
+		.ticket {
+			font-family: Times, 'Times New Roman', serif;
+			margin-left: 100px;
+			width: 90%;
+			height: 50%;
+			visibility: visible;
+			position: absolute;
+	    right: 0;
+	    top: 0;
+		}
+		body:not(div.ticket) {
+			display: none;
+		}
+   }
